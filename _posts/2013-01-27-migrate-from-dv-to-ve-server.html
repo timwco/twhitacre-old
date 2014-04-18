@@ -1,0 +1,77 @@
+---
+layout: post
+title: Migrate from (dv) to (ve) Server
+categories:
+- Development
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _yoast_wpseo_linkdex: '0'
+  _edit_last: '1'
+  _syntaxhighlighter_encoded: '1'
+  _yoast_wpseo_focuskw: ''
+  _yoast_wpseo_title: ''
+  _yoast_wpseo_metadesc: ''
+  _yoast_wpseo_meta-robots-noindex: '0'
+  _yoast_wpseo_meta-robots-nofollow: '0'
+  _yoast_wpseo_meta-robots-adv: none
+  _yoast_wpseo_sitemap-include: ! '-'
+  _yoast_wpseo_sitemap-prio: ! '-'
+  _yoast_wpseo_canonical: ''
+  _yoast_wpseo_redirect: ''
+  _yoast_wpseo_opengraph-description: ''
+  _yoast_wpseo_google-plus-description: ''
+  _wpas_done_all: '1'
+  dsq_thread_id: '1049908988'
+author:
+  login: whitink
+  email: whitink@gmail.com
+  display_name: Tim
+  first_name: Tim
+  last_name: Whitacre
+---
+<p>Both my <a href="http://argyllstudios.com">company</a> an I have been using Media Temple for years now. We started on their Grid Server (shared hosting) but quickly realized we needed a much better server. That's when we moved to their Dedicated Virtual (dv) server. We've been running that for the past 3 years and have had no problems at all. In fact it's been the best hosting we've ever had.</p>
+<p>Even though business is going well, we started looking at ways to save a little $$ here and there. We decided to re-evaluate our hosting platform and see how we could save money. After much consideration we decided to stick with MT since they've always been so good to us, but decided to switch to their (ve) server. The specs are almost the same and it's almost half the price.</p>
+<p>The difference? Basically with the (dv) you are not only paying for hosting but also for a Plesk license. It gives you a nice GUI for interacting with the server. Since we already work a ton with command line on our other severs we decided we didn't need this luxury.</p>
+<p>Ok, enough with the back story. Here's the HOW you've been waiting for. Keep in mind that this info is based around migrating from a (dv) to a (ve) server BUT it will help anyone looking to get started with MT's (ve) server.</p>
+<p>Also, the info below is only for migrating a site to the (ve) and not how to "set it up". If you are looking for that, I recommend <a href="http://donaldjenkins.com/2011/12/switching-from-a-dv-to-a-ve-server-on-media-temple/" target="_blank">this</a> article.</p>
+<p>&nbsp;</p>
+<p>1. First things first, SSH into your server. (you can use any user that you've set up or you can even use 'root')</p>
+<p>2. Create the new site in your virtual host (replace with your domain and IP address)</p>
+<p>[bash] sudo vi /etc/apache2/sites-available/DOMAIN.COM [/bash]</p>
+<p>Then add the following to the file</p>
+<p>[plain]<br />
+&lt;VirtualHost YOUR-IP:80&gt;<br />
+ServerAdmin webmaster@DOMAIN.COM<br />
+ServerName DOMAIN.COM<br />
+ServerAlias www.DOMAIN.COM<br />
+DocumentRoot /var/www/DOMAIN.COM/html/<br />
+ErrorLog /var/www/DOMAIN.COM/logs/error.log<br />
+CustomLog /var/www/DOMAIN.COM/logs/access.log combined<br />
+&lt;/VirtualHost&gt;<br />
+[/plain]</p>
+<p>You'll also need to know how to use Vi, and can find out more <a href="http://www.cs.colostate.edu/helpdocs/vi.html" target="_blank">HERE</a>, but for know just know that <strong>:q</strong> will QUIT the file and <strong>:wq</strong> will WRITE it before you QUIT.</p>
+<p>3. Now we need to create the directories we specified above "html" and "logs"</p>
+<p>[bash]<br />
+sudo mkdir -p /var/www/DOMAIN.COM/html<br />
+sudo mkdir -p /var/www/DOMAIN.COM/logs<br />
+[/bash]</p>
+<p>4. Then just add the site to Apache and reload it.</p>
+<p>[bash]<br />
+sudo a2ensite DOMAIN.COM<br />
+sudo /etc/init.d/apache2 reload<br />
+[/bash]</p>
+<p>5. Make the folder writeable use either 755 or 777 (just be cautious of security)</p>
+<p>[bash] sudo chmod 777 /var/www/DOMAIN.COM/html [/bash]</p>
+<p>6. Copy over your files from your (dv) to your (ve) and verify it's all there - <a href="http://ip-address/domain.com/html/" target="_blank">http://ip-address/domain.com/html/</a></p>
+<p>7. Now comes the database part. If your site is database-less then you can move on to the last step otherwise see below.</p>
+<p>First log in to MySQL via command line (I prefer to log in with root)</p>
+<p>[bash] mysql -u root -p [/bash]</p>
+<p>Second, create the database and set up a user and password</p>
+<p>[bash] create database DATABASE-NAME; grant all on DATABASE-NAME.* to 'USERNAME' identified by 'PASSWORD'; [/bash]</p>
+<p>Third, exit MySQL and import your .SQL file into the database. I personally found the easiest way to do this is to first upload your .SQL file to the root of your /html/ folder then run the following.</p>
+<p>[bash] mysql -u root -p DATABASE-NAME &lt; /var/www/DOMAIN.COM/html/FILENAME.SQL [/bash]</p>
+<p>8. Lastly, log into your OLD (dv) and remove the DNS Zone and then log into your new (ve) and add the new DNS Zone.... or you could just use MT's built in <a href="http://kb.mediatemple.net/questions/1882/Using+the+Point+to+Another+Server+tool">Point to Another Server Tool</a>.</p>
+<p>That should be it... let me know if you have any issues or run into any problems.</p>
