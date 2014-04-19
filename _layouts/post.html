@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div>
+<section id="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="feat">
+        <h5 class="page-date"><time itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time></h5>
+    </div>
+    <h1 class="page-title" itemprop="name headline" >{{ page.title }}</h1>
+    <div itemprop="articleBody">{{ content }}</div>
+    <div id="share" class="feat"></div>
+  </article>
+</section>

@@ -1,13 +1,43 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Tim Whitacre
 ---
-
 <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+    <ul class="posts" id="blogroll">
+        <li class="list-heading">Writting</li>
+            {% for post in paginator.posts %}
+                <li itemscope itemtype="http://schema.org/BlogPosting">
+                    <a href="{{ post.url }}" itemprop="url">
+                        <div class="p-wrap">
+                            <time class="date" itemprop="datePublished">{{ post.date | date: "%b %-d" }}</time>
+                            <p itemprop="name headline">{{ post.title }}</p>
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
+        <li class="paging" role="pagenavigation">
+            {% if paginator.previous_page %}
+                {% if paginator.page == 2 %}
+                <a rel="next" href="/" id="next">&larr;</a>
+                {% else %}
+                <a rel="next" href="/page{{ paginator.previous_page }}" id="next">&larr;</a>
+                {% endif %}
+            {% endif %}
+            {% if paginator.next_page %}
+            <a rel="prev" href="/page{{ paginator.next_page }}" id="prev">&rarr;</a>
+            {% endif %}
+        </li>
+    </ul>
+    <ul class="posts secondList">
+        <li class="list-heading">Projects</li>
+        <li><a target="_blank" href="http://getbarley.com"><div class="p-wrap">Barley Editor</div></a></li>
+        <li><a target="_blank" href="https://unmark.it"><div class="p-wrap">Unmark.it</div></a></li>
+        <li><a href="/whiskey"><div class="p-wrap">My Whiskey List</div></a></li>
+        <li><a target="_blank" href="http://codeandtonic.com"><div class="p-wrap">Code &amp; Tonic</div></a></li>
+        <li class="list-heading">Social</li>
+        <li><a target="_blank" href="https://github.com/twhitacre"><div class="p-wrap">Github</div></a></li>
+        <li><a target="_blank" href="http://twitter.com/timwco"><div class="p-wrap">Twitter</div></a></li>
+        <li><a target="_blank" href="http://www.linkedin.com/profile/view?id=28676587"><div class="p-wrap">LinkedIn</div></a></li>
+    </ul>
+    <div class="clear"></div>
 </div>
