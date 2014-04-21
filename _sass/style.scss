@@ -291,7 +291,7 @@ ul.posts li .p-wrap {
     font-size: 18px;
 }
 ul.posts li .p-wrap:hover { background: $color3; padding-left: 30px; color: #FFF; }
-ul.posts li .p-wrap:active { background: #569BEA; }
+ul.posts li .p-wrap:active { background: $color3; }
 ul.posts li .p-wrap:hover::after { content:'\2192'; margin-left: 10px; }
 ul.posts li .p-wrap p { display: inline; margin-bottom: 0; }
 ul.posts li .date { color: $color4; padding-right: 20px; }
