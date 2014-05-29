@@ -1,4 +1,6 @@
 name: Tim Whitacre
+description: Tim Whitacre's Blog
+url: http://timw.co
 markdown: redcarpet
 pygments: true
 paginate: 5
