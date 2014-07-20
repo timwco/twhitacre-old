@@ -2,40 +2,9 @@
 layout: default
 title: Tim Whitacre
 ---
-<div id="home">
-    <ul class="posts" id="blogroll">
-        <li class="list-heading">Writting</li>
-            {% for post in paginator.posts %}
-                <li itemscope itemtype="http://schema.org/BlogPosting">
-                    <a href="{{ post.url }}" itemprop="url">
-                        <div class="p-wrap">
-                            <time class="date" itemprop="datePublished">{{ post.date | date: "%b %d" }}</time>
-                            <p itemprop="name headline">{{ post.title }}</p>
-                        </div>
-                    </a>
-                </li>
-            {% endfor %}
-        <li class="paging" role="pagenavigation">
-            {% if paginator.previous_page %}
-                {% if paginator.page == 2 %}
-                <a rel="next" href="/" id="next">&larr;</a>
-                {% else %}
-                <a rel="next" href="/page{{ paginator.previous_page }}" id="next">&larr;</a>
-                {% endif %}
-            {% endif %}
-            {% if paginator.next_page %}
-            <a rel="prev" href="/page{{ paginator.next_page }}" id="prev">&rarr;</a>
-            {% endif %}
-        </li>
-    </ul>
-    <ul class="posts secondList">
-        <li class="list-heading">More</li>
-        <li><a href="/portfolio"><div class="p-wrap">Portfolio</div></a></li>
-        <li><a href="/whiskey"><div class="p-wrap">Whiskey List</div></a></li>
-        <li class="list-heading">Social</li>
-        <li><a target="_blank" href="https://github.com/twhitacre"><div class="p-wrap">Github</div></a></li>
-        <li><a target="_blank" href="http://twitter.com/timwco"><div class="p-wrap">Twitter</div></a></li>
-        <li><a target="_blank" href="http://www.linkedin.com/profile/view?id=28676587"><div class="p-wrap">LinkedIn</div></a></li>
-    </ul>
-    <div class="clear"></div>
-</div>
+{% for post in paginator.posts %}
+  <article>
+    <h2 class="post-title-list"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="post-content">{{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_html }}</div>
+  </article>
+{% endfor %}

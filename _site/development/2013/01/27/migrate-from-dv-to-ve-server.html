@@ -1,44 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en-US">
 <head>
-    <title>Migrate from (dv) to (ve) Server</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="content-language" content="en-gb" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="google-site-verification" content="ZVCJnHS89PpIlJB26tTBBSSLgub3jUQiORMfNwXfN0o" />
-    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="content-language" content="en-gb" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+  <title>Migrate from (dv) to (ve) Server</title>
+
+  <meta name="description" content="Code. Music. Life."/>
+  <link rel="canonical" href="http://timw.co/" />
+  <link rel="publisher" href="http://timw.co/"/>
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tim Whitacre" />
+  <meta property="og:description" content="Code. Music. Life." />
+  <meta property="og:url" content="http://timw.co/" />
+  <meta property="og:site_name" content="Tim Whitacre" />
+
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700' rel='stylesheet' type='text/css'>
+
+  <link href="/css/typicons.min.css" rel="stylesheet" type="text/css" />
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+  <link REL="SHORTCUT ICON" HREF="images/yourfavicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="images/youriphoneicon.png">
+
+  <meta name="google-site-verification" content="ZVCJnHS89PpIlJB26tTBBSSLgub3jUQiORMfNwXfN0o" />
+
 </head>
+<body>
 
-    <body>
+<div id="container">
 
-        <div id="off-canvas">
-          <div id="avatar">
-            <img src="/img/avatar.png" alt="Tim Whitacre" />
-          </div>
-          <div id="bio" data-barley="offcanvas_info" data-barley-editor="advanced">
-              <h1>Hi, I'm Tim.</h1>
-<p>I'm a web developer living in Atlanta, GA with my <a href="http://stephwhitacre.com"> wife</a> and <a href="https://twitter.com/timwco/status/380106241814843392">dog</a>. I've been developing web sites and applications for the past 12 years. I have had the privilege to work with large and small shops and even a few startups. I also co-founded two companies, <a href="http://argyllstudios.com">Argyll Studios</a> and <a href="http://hostednotes.com">Hosted Notes</a>. The latter was successfully acquired in 2013. I had the privilege to build the front end of the <a href="http://getbarley.com">Barley Editor</a> and the app <a href="https://unmark.it">Unmark</a>.</p> 
-<p>Currently I'm a Front End (JavaScript) instructor at <a href="http://theironyard.com">The Iron Yard</a></p>
-          </div>
-        </div>
+  <header>
+    <a id="logo" href="/"><span>Tim Whitacre</span></a>
+    <nav>
+      <a class="typcn typcn-social-github" href="http://github.com/twhitacre"></a>
+      <a class="typcn typcn-social-twitter" href="http://twitter.com/timwco"></a>
+      <a class="typcn typcn-social-instagram" href="http://instagram.com/timwco"></a>
+    </nav>
+  </header>
 
-        <header>
-          <div class="h-wrap">
-              <h1 class="title"><a href="/" title="Back to Homepage">Tim Whitacre</a></h1>
-              <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
-            </div>
-        </header>
+  <section id="intro">
+    <p>Hi. I'm Tim, a hacker and teacher living in Atlanta.</p>
+    <p>When not hacking on a project you can find me playing music or running wild.</p>
+  </section>
 
-        <main><section id="single-wrap">
-  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="feat">
-        <h5 class="page-date"><time itemprop="datePublished">January 27, 2013</time></h5>
-    </div>
-    <h1 class="page-title" itemprop="name headline" >Migrate from (dv) to (ve) Server</h1>
-    <div itemprop="articleBody"><p>Both my <a href="http://argyllstudios.com">company</a> an I have been using Media Temple for years now. We started on their Grid Server (shared hosting) but quickly realized we needed a much better server. That's when we moved to their Dedicated Virtual (dv) server. We've been running that for the past 3 years and have had no problems at all. In fact it's been the best hosting we've ever had.</p>
+  <section id="content"><article>
+  <h2 class="post-title">Migrate from (dv) to (ve) Server</h2>
+  <div class="post-content"><p>Both my <a href="http://argyllstudios.com">company</a> an I have been using Media Temple for years now. We started on their Grid Server (shared hosting) but quickly realized we needed a much better server. That's when we moved to their Dedicated Virtual (dv) server. We've been running that for the past 3 years and have had no problems at all. In fact it's been the best hosting we've ever had.</p>
 <p>Even though business is going well, we started looking at ways to save a little $$ here and there. We decided to re-evaluate our hosting platform and see how we could save money. After much consideration we decided to stick with MT since they've always been so good to us, but decided to switch to their (ve) server. The specs are almost the same and it's almost half the price.</p>
 <p>The difference? Basically with the (dv) you are not only paying for hosting but also for a Plesk license. It gives you a nice GUI for interacting with the server. Since we already work a ton with command line on our other severs we decided we didn't need this luxury.</p>
 <p>Ok, enough with the back story. Here's the HOW you've been waiting for. Keep in mind that this info is based around migrating from a (dv) to a (ve) server BUT it will help anyone looking to get started with MT's (ve) server.</p>
@@ -82,27 +95,23 @@ sudo /etc/init.d/apache2 reload<br />
 <p>8. Lastly, log into your OLD (dv) and remove the DNS Zone and then log into your new (ve) and add the new DNS Zone.... or you could just use MT's built in <a href="http://kb.mediatemple.net/questions/1882/Using+the+Point+to+Another+Server+tool">Point to Another Server Tool</a>.</p>
 <p>That should be it... let me know if you have any issues or run into any problems.</p>
 </div>
-    <div id="share" class="feat"></div>
-  </article>
-</section></main>
+  <time class="post-date">This article was published on January 27, 2013</time>
+</article></section>
 
-      <footer>
-        <small>
-            Powered by <a href="http://jekyllrb.com/">Jekyll</a> - 
-            Hosted on <a href="https://github.com/twhitacre/twhitacre.github.io">Github</a> -
-            &copy; Tim Whitacre
-        </small>
-      </footer>
+  <footer>
+    <a href="http://timw.co">Code. Music. Life.</a>
+  </footer>
 
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-49577871-1', 'timw.co');
-        ga('send', 'pageview');
-      </script>
+</div><!-- END CONTAINER -->
 
-      <script src="/js/main.js"></script>
-    </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49577871-1', 'timw.co');
+  ga('send', 'pageview');
+</script>
+
+</body>
 </html>
