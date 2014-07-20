@@ -2,7 +2,7 @@
 layout: default
 ---
 <article>
-  <h2 class="post-title">{{ page.title }}</h2>
+  <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-content">{{ content }}</div>
-  <time class="post-date">This article was published on {{ page.date | date: "%B %-d, %Y" }}</time>
+  <time class="post-date">Published on {{ page.date | date: "%B %-d, %Y" }}</time>
 </article>

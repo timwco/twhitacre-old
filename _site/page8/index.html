@@ -12,12 +12,6 @@
   <meta name="description" content="Code. Music. Life."/>
   <link rel="canonical" href="http://timw.co/" />
   <link rel="publisher" href="http://timw.co/"/>
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Tim Whitacre" />
-  <meta property="og:description" content="Code. Music. Life." />
-  <meta property="og:url" content="http://timw.co/" />
-  <meta property="og:site_name" content="Tim Whitacre" />
 
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700' rel='stylesheet' type='text/css'>
@@ -25,9 +19,7 @@
   <link href="/css/typicons.min.css" rel="stylesheet" type="text/css" />
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
 
-  <link REL="SHORTCUT ICON" HREF="images/yourfavicon.ico">
-  <link rel="apple-touch-icon-precomposed" href="images/youriphoneicon.png">
-
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
   <meta name="google-site-verification" content="ZVCJnHS89PpIlJB26tTBBSSLgub3jUQiORMfNwXfN0o" />
 
 </head>
@@ -38,68 +30,110 @@
   <header>
     <a id="logo" href="/"><span>Tim Whitacre</span></a>
     <nav>
-      <a class="typcn typcn-social-github" href="http://github.com/twhitacre"></a>
-      <a class="typcn typcn-social-twitter" href="http://twitter.com/timwco"></a>
-      <a class="typcn typcn-social-instagram" href="http://instagram.com/timwco"></a>
+      <a class="typcn typcn-social-github-circular" href="http://github.com/twhitacre"></a>
+      <a class="typcn typcn-social-twitter-circular" href="http://twitter.com/timwco"></a>
+      <a class="typcn typcn-social-linkedin-circular" href="https://www.linkedin.com/profile/view?id=28676587"></a>
     </nav>
   </header>
 
   <section id="intro">
     <p>Hi. I'm Tim, a hacker and teacher living in Atlanta.</p>
-    <p>When not hacking on a project you can find me playing music or running wild.</p>
+    <p>When not working on a project you can find me playing music or <a href="/whiskey">drinking whiskey</a>.</p>
   </section>
 
   <section id="content">
   <article>
-    <h2 class="post-title-list"><a href="/life/2011/10/15/ios-5-my-thoughts.html">iOS 5 - My Thoughts</a></h2>
-    <div class="post-content">Well, I updated to iOS 5.0 just a couple days ago and so far so good. It's hard to believe that an OS update of any kind can show considerable improvement in speed when the device hasn't changed at all... as I'm still running the iPhone 4.
-I'm very impressed with the updates to the notifications and the camera as a whole but to me the one thing that I love the most is the text-expansion. I'll admit it, I'm not very good at texting and having the ability to create my own shortcuts makes for a much easier time to respond to the few texts I get on a daily basis.
-My favorite so far is "amw"... when I type that it will expand to "let me ask my wife". This gets me out of a lot of things I don't want to do.
+    <h2 class="post-title-list"><a href="/development/2012/03/20/wordpress-get-rounded-of-posts.html">WordPress - Get Rounded # of Posts</a></h2>
+    <div class="post-content">
+      So, I've written about this before, but decided to post it up here for your (and my) sake as a reference.
+&nbsp;
+
+&nbsp;
+I had a client who had a massive amount of articles on his website and by using a content aggregation (a Google nightmare), he was adding more and more by the minute. Because of the vast number of articles, he wanted a way to show his visitors the size of his site but wanted it to look a little prettier than just counting all posts. We both agreed that the best way to handle this would be to display the posts rounded to the nearest hundred, since that is most commonly what he would say in passing when someone asked him about his blog.
+&nbsp;
 
 
-</div>
+
+
+      <a class="readmore" href="/development/2012/03/20/wordpress-get-rounded-of-posts.html">read more...</a>
+    </div>
   </article>
 
   <article>
-    <h2 class="post-title-list"><a href="/life/2011/09/03/back-from-vacation.html">Back from Vacation</a></h2>
-    <div class="post-content">Just got back from vacation and it was wonderful. I absolutely love what I do, but even those of us who have our "dream jobs" need a vacation from it every once in a while.
+    <h2 class="post-title-list"><a href="/development/2012/03/03/responsive-design-question.html">Responsive Design Question</a></h2>
+    <div class="post-content">
+      First off.... if you are unfamiliar with the term "responsive web design" (RWD) check out A List Apart's article on responsive web design.
+Now that that's out of the way. I'd like to take a look at a recent issue brought up by a client I was working with. In building out their website with fluid grids and RWD, we came across a small issue. That issue was that when a visitor of the website was using a tablet, phone or any smaller-dimension browsing device, there was no way for them to get back to a full site view.
 
-My wife and I were able to spend the last week at a cabin on Lake Anna in the middle of Virginia. We planned our trip perfectly so there was very few people on the lake while we were there. We spent our days kayaking around the lake and swimming just off shore near our cabin.
-On the last night there we laid out on the dock and just talked about the things in our lives we loved, the things we hated and the things we wanted to improve upon. I feel as though this was a huge highlight of the trip.
+This may sound a little strange, but it got me thinking. Remember when mobile versions of a website because really popular? Remember when jQuery mobile came out? Both of these solutions came about because we wanted an easy way to present our websites to clients on smaller devices, especially phones. While iPhones and Android browsers are great, sometimes you want a smaller version of the website to quickly navigate around and get the information you came seeking. Unfortunately not everyone has the money or really even needs a full blown native mobile app, but pretty much everyone these days should consider some sort of mobile solution. This is what spawned the mobile version of websites and ultimately the need for responsive design. Shortly after the creation of mobile version websites, developers needed a way to give the visitor the ability to go back to the "desktop version" of a site while on their phones. This is because generally speaking, a mobile version of a website is quite a bit different than the desktop version. Usually there are less images and less interactive features. Mobile websites generally focus more on content than anything else. The idea is to give the reader a quick overview or snapshot of what your company does.
+So, back to my original problem. When creating a website using RWD, does one need to include a way to go back to a desktop version? You see, a mobile version a lot of times sits on a subdomain like mobile.domain.com or m.domain.com. With RWD, there is no "other version" of the website but rather you use CSS3 media queries to determine how the content is portrayed to the visitor depending on the dimensions of their browsing window. Since it's not a separate version of the site, how and more importantly should you include a way to go back to a full desktop version.
+
+When I first started using RWD over a year ago, I didn't ever consider this. I figured since we would still be showing the exact same site with just little bit less flair, the visitor didn't need a way to "go back". Recently though, as many companies are embracing this technology, I find myself more and more frustrated that I can't view certain sites on my iPhone the way they were originally meant to be viewed. There is not way to go back. After having a brief discussion with this client I'm currently working with, they decided they did want a way to do this.
+To not drag this on any further, I've decided that it's much better to just give the visitors the choice. How can this be handled? Well there are many ways to tackle this from a programming standpoint. The BEST way, in my opinion, is to take care of it using your server-side language and setting either a temporary cookie or using a session to create an ID on the body tag that will override all of the media queries and thus presenting the site in its original format. It's not a small task, but once you build it into the framework of your choice, it will be done.
+I have yet to do this on my website, which currently utilizes RWD, but when I get time I'll post up the code example of how I did it in case you are wondering. In the meantime, feel post a comment below or share your thoughts.
+&nbsp;
 
 
-</div>
+
+      <a class="readmore" href="/development/2012/03/03/responsive-design-question.html">read more...</a>
+    </div>
   </article>
 
   <article>
-    <h2 class="post-title-list"><a href="/mobile/music/2011/08/11/purple-door-mobile-app.html">Purple Door - Mobile App</a></h2>
-    <div class="post-content">So getting ready to leave for Purple Door Festival 2011 tomorrow and in the meantime I thought I'd throw together a quick mobile app using jQuery Mobile so I'd have a better way of keeping the schedule in my pocket.
-Anyone interested can find it here - Purple Door Mobile Schedule
+    <h2 class="post-title-list"><a href="/development/life/2012/02/22/reboot.html">Reboot</a></h2>
+    <div class="post-content">
+      So, it's that time again. It comes once a year or so. The time to reformat your hard drive and get your computer as clean as a whistle.
+I don't know about you,  but over time I download and install many different apps and then uninstall just about as many. That leaves my computer hating me. I can sense it getting more and more frustrated every time I drag a new application into the folder. Well not anymore. Today it's smiling right back at me. With a squeaky clean hard drive and a fresh updated OS (Lion) my computer is ruining on all cylinders.
+I also get a lot of people asking me quite often what I use as far as programs go. Well, when I decided to do my reboot, I made a list of all the programs I needed for daily work before I wiped them so I'd have a reference to look back on. I've decided to share it below... broken up into category.
+I hope someone else finds this useful.
+ System Programs
+
+Clean My Mac - very important. It keeps my mac running very smoothly.
+Dropbox - for sharing files between co-workers
+iBank - keeps my finances in order
+VLC - the only way to watch movies
+Carbonite - gotta keep things backed up
+
+Programming Tools
+
+Sublime Text 2 - wicked fast development
+Coda - still pretty good... but slowly moving away from it for the one above
+MAMP Pro - gotta have mamp
+Sequal Pro - my favorite way to interact with my database locally and some online ones
+iTerm - better version of Terminal
+ColorSnapper - grabs colors
+Filezilla - fastest FTP program I've ever used.
+
+Office Stuff
+
+Evernote - keeps things in sync
+Pages - great word processor... much better than Word
+
+Photo and Slicing Programs
+
+Fireworks CS3 - I like this version the best
+Photoshop CS5 - I finally upgraded and so far so good
+
+Other than a few other random programs, that's all I run.
 
 
-</div>
+
+      <a class="readmore" href="/development/life/2012/02/22/reboot.html">read more...</a>
+    </div>
   </article>
 
-  <article>
-    <h2 class="post-title-list"><a href="/life/2011/02/28/30-hour-fast-2011.html">30 Hour Fast 2011</a></h2>
-    <div class="post-content">I consider myself luck that over the past 3 years I've been able to be a part of Parker Hill and their student ministries department. Over this last weekend I was able to take part in what is called the 30 hour fast. Basically all of the students from middle school to high school raise money and awareness by giving up their right to eat for 30 hours.
-Here's a clip of the highlight video:
 
+<div class="pagination">
+  
+    
+      <a href="/page7" class="typcn typcn-arrow-left-thick"></a>
+    
+  
 
-
-</div>
-  </article>
-
-  <article>
-    <h2 class="post-title-list"><a href="/development/2011/02/14/hosted-notes-launch.html">Hosted Notes Launch</a></h2>
-    <div class="post-content">I should probably be more worried about what I'm going to get my wife today, but I also wanted to take time out to announce the launch of the first ever online web app that I was able to be a part of.
-It's called Hosted Notes and it's tool to help keep track of passwords. It was originally concieved with freelances in mind. When doing a website for a client, you usually end up with many different passwords and programs you need access to. With Hosted Notes you can keep track of all of them in one simple secure place.
-I believe we'll be launching more features over time, but feel free to check it out ant let me know what you think!
-
-
-</div>
-  </article>
-</section>
+  
+  <a href="/page9" class="typcn typcn-arrow-right-thick next"></a>
+  
+</div></section>
 
   <footer>
     <a href="http://timw.co">Code. Music. Life.</a>
