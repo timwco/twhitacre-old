@@ -19,13 +19,13 @@
   <link href="/css/typicons.min.css" rel="stylesheet" type="text/css" />
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
 
-  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  <link href="/favicon.ico" rel="icon" type="image/x-icon" />
   <meta name="google-site-verification" content="ZVCJnHS89PpIlJB26tTBBSSLgub3jUQiORMfNwXfN0o" />
 
 </head>
 <body>
 
-<div id="container">
+<div id="container" class="">
 
   <header>
     <a id="logo" href="/"><span>Tim Whitacre</span></a>
@@ -36,14 +36,10 @@
     </nav>
   </header>
 
-  <section id="intro">
-    <p>Hi. I'm Tim, a hacker and teacher living in Atlanta.</p>
-    <p>When not working on a project you can find me playing music or <a href="/whiskey">drinking whiskey</a>.</p>
-  </section>
-
-  <section id="content"><article>
-  <h1 class="post-title">Migrate from (dv) to (ve) Server</h1>
-  <div class="post-content"><p>Both my <a href="http://argyllstudios.com">company</a> an I have been using Media Temple for years now. We started on their Grid Server (shared hosting) but quickly realized we needed a much better server. That's when we moved to their Dedicated Virtual (dv) server. We've been running that for the past 3 years and have had no problems at all. In fact it's been the best hosting we've ever had.</p>
+  <section id="content">
+  <article>
+    <h1 class="post-title">Migrate from (dv) to (ve) Server</h1>
+    <div class="post-content"><p>Both my <a href="http://argyllstudios.com">company</a> an I have been using Media Temple for years now. We started on their Grid Server (shared hosting) but quickly realized we needed a much better server. That's when we moved to their Dedicated Virtual (dv) server. We've been running that for the past 3 years and have had no problems at all. In fact it's been the best hosting we've ever had.</p>
 <p>Even though business is going well, we started looking at ways to save a little $$ here and there. We decided to re-evaluate our hosting platform and see how we could save money. After much consideration we decided to stick with MT since they've always been so good to us, but decided to switch to their (ve) server. The specs are almost the same and it's almost half the price.</p>
 <p>The difference? Basically with the (dv) you are not only paying for hosting but also for a Plesk license. It gives you a nice GUI for interacting with the server. Since we already work a ton with command line on our other severs we decided we didn't need this luxury.</p>
 <p>Ok, enough with the back story. Here's the HOW you've been waiting for. Keep in mind that this info is based around migrating from a (dv) to a (ve) server BUT it will help anyone looking to get started with MT's (ve) server.</p>
@@ -87,8 +83,11 @@ sudo /etc/init.d/apache2 reload<br />
 <p>8. Lastly, log into your OLD (dv) and remove the DNS Zone and then log into your new (ve) and add the new DNS Zone.... or you could just use MT's built in <a href="http://kb.mediatemple.net/questions/1882/Using+the+Point+to+Another+Server+tool">Point to Another Server Tool</a>.</p>
 <p>That should be it... let me know if you have any issues or run into any problems.</p>
 </div>
-  <time class="post-date">Published on January 27, 2013</time>
-</article></section>
+    <time class="post-date">Published on January 27, 2013</time>
+  </article>
+</section>
+
+<p><a href="/"><span class="typcn typcn-arrow-back"></span> back</a></p>
 
   <footer>
     <a href="http://timw.co">Code. Music. Life.</a>

@@ -19,13 +19,13 @@
   <link href="/css/typicons.min.css" rel="stylesheet" type="text/css" />
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
 
-  <link href="{{ 'favicon.ico' | asset_url }}" rel="icon" type="image/x-icon" />
+  <link href="{{ '/favicon.ico' | asset_url }}" rel="icon" type="image/x-icon" />
   <meta name="google-site-verification" content="ZVCJnHS89PpIlJB26tTBBSSLgub3jUQiORMfNwXfN0o" />
 
 </head>
 <body>
 
-<div id="container">
+<div id="container" class="{{ layout }}">
 
   <header>
     <a id="logo" href="/"><span>Tim Whitacre</span></a>
@@ -36,12 +36,7 @@
     </nav>
   </header>
 
-  <section id="intro">
-    <p>Hi. I'm Tim, a hacker and teacher living in Atlanta.</p>
-    <p>When not working on a project you can find me playing music or <a href="/whiskey">drinking whiskey</a>.</p>
-  </section>
-
-  <section id="content">{{ content }}</section>
+  {{ content }}
 
   <footer>
     <a href="http://timw.co">Code. Music. Life.</a>

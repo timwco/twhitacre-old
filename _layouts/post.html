@@ -1,8 +1,13 @@
 ---
 layout: default
 ---
-<article>
-  <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-content">{{ content }}</div>
-  <time class="post-date">Published on {{ page.date | date: "%B %-d, %Y" }}</time>
-</article>
+
+<section id="content">
+  <article>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-content">{{ content }}</div>
+    <time class="post-date">Published on {{ page.date | date: "%B %-d, %Y" }}</time>
+  </article>
+</section>
+
+<p><a href="/"><span class="typcn typcn-arrow-back"></span> back</a></p>
