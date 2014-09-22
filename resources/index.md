@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: extra
 title: Front End Resources
 ---
 
-Below is a list of resources that I use, love and desire to share. Please enjoy responsibly.
+___Below is a list of resources that I use, love and desire to share. Please enjoy responsibly.___
 
 ## General Cheat Sheets
 * [HTML](http://overapi.com/html/)

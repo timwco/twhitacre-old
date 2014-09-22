@@ -32,7 +32,7 @@ body {
 	-moz-animation-duration: 0.5s;
 	-ms-animation-duration: 0.5s;
 	-o-animation-duration: 0.5s;
-	animation-duration: 0.5s; 
+	animation-duration: 0.5s;
 }
 
 @-webkit-keyframes bodyAnim {
@@ -245,7 +245,7 @@ footer {
 }
 
 footer a {
-	
+
 }
 
 
@@ -310,6 +310,15 @@ footer a {
 }
 #logo:hover span {
   display: block !important;
+}
+
+.extra {
+	h2 {
+		color: #F45145;
+	}
+	ul {
+		margin: 20px 0;
+	}
 }
 
 
