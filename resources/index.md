@@ -3,9 +3,7 @@ layout: extra
 title: Front End Resources
 ---
 
-___Below is a list of ever-changing resources that I use, love and desire to share.___
-
-___Please enjoy responsibly.___
+___Below is a list of ever-changing resources that I use, love and desire to share. Please enjoy responsibly.___
 
 ## General Cheat Sheets
 * [HTML](http://overapi.com/html/)
