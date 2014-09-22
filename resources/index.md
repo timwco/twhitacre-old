@@ -3,7 +3,9 @@ layout: extra
 title: Front End Resources
 ---
 
-___Below is a list of resources that I use, love and desire to share. Please enjoy responsibly.___
+___Below is a list of ever-changing resources that I use, love and desire to share.___
+
+___ Please enjoy responsibly.___
 
 ## General Cheat Sheets
 * [HTML](http://overapi.com/html/)
@@ -33,20 +35,18 @@ ___Below is a list of resources that I use, love and desire to share. Please enj
 * [Hack Design](https://hackdesign.org/)
 * [JSConf 2014 Videos](https://www.youtube.com/playlist?list=PL37ZVnwpeshHVd9Zf92zW4UJGWzPHU3o4)
 
-## Some More Resources
-
-#### List of JavaScript Tools / jQuery Plugins
+## List of JavaScript Tools / jQuery Plugins
 * [JavaScript Projects](http://www.javascriptoo.com/)
 * [Database of JavaScript Resources](http://www.jsdb.io/)
 * [List of jQuery Plugins](http://www.unheap.com/)
 * [jQuery Plugin Repository](http://plugins.jquery.com/)
 
-#### UI Tools
+## UI Tools
 * [jQuery UI](http://jqueryui.com/)
 * [jQuery Mobile](http://jquerymobile.com/)
 * [Wijmo](http://wijmo.com/)
 
-#### Design Resources & Inspirations
+## Design Resources & Inspirations
 * [Envato Marketplace](http://themeforest.net/)
 * [Creative Market](https://creativemarket.com/)
 * [The Noun Project](http://thenounproject.com/)
@@ -56,13 +56,13 @@ ___Below is a list of resources that I use, love and desire to share. Please enj
 * [Subtle Background Patterns](http://subtlepatterns.com/)
 * [Dribbble](https://dribbble.com/)
 
-#### Show Me The Money
+## Show Me The Money
 * [Shopify](http://www.shopify.com/)
 * [Stripe Payment API](https://stripe.com/)
 
-#### Great Mac Apps
+## Great Mac Apps
 * [Alfred](http://www.alfredapp.com/)
 
-#### Hosting
+## Hosting
 * [Digital Ocean](https://www.digitalocean.com/)
 * [Saddington on Hosting](http://john.do/blog-hosting/)
