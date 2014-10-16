@@ -45,63 +45,117 @@
 <section id="content">
   
   <article>
-    <h2 class="post-title-list"><a href="/life/music/2012/10/03/guitars-and-pedals.html">Guitars & Pedals</a></h2>
-    <span class="date">October 3, 2012</span>
+    <h2 class="post-title-list"><a href="/development/2013/01/27/migrate-from-dv-to-ve-server.html">Migrate from (dv) to (ve) Server</a></h2>
+    <span class="date">January 27, 2013</span>
     <div class="post-content">
-      It's no secret that I thoroughly enjoy music, but many may not know that I also play myself. I have the privilege of co-leading the student band at our church on a weekly basis and getting to lead a group of up to 75 middle school students in worship every Sunday.
-Another thing about me is I'm a gear hound... I can never seem to have enough. While I consider myself very good with our finances, I do have a week spot.
-Over the last few weeks, I've been re-building my pedal board and somehow in the middle of it all, I also picked up a new guitar.
-We'll start with the guitar. It's a Ibanez Artcore AS73, a semi-hollow body guitar that sounds just as pretty as it looks. Since I play a variety of different types of music, I needed something that was a little less aggressive than my current guitar (Schecter C1-Elite) and I just happened to find this guitar for a steal.
-After my bank account recovered from that purchase, I went back to finalizing my pedal board... for now.
-I'll break it down for you based off of the signal chain (from my guitar to my amp).
-
-
-Korg Pitch Black Tuner - best tuner I've ever used... especially on a dark stage
-SHO Clone - this is similar to an EP Booster... it gives my signal a boost while preserving the sound
-CMATMODS Brownie - this is one of the best overdrive pedals I've ever played. I keep the drive down low and use it for less aggressive songs.
-Fulltone OCD - this is my second overdrive pedal and I use it for more aggressive songs. It can go from a sweet overdrive to a crushing distortion all while sounding unbelievable. I will never have a pedal board without this one.
-Ernie Ball Passive Volume Pedal - controls volume
-Boss DD5 (with external tap tempo I built myself) - I keep this on the dotted eighth note setting and tap in the tempo of the song we are playing.
-Boss RV5 - I'm not HUGE on reverb, but I do like this pedal a lot. I generally keep it on the modulation setting but changed it up every now and then.
-Lastly, I run from my RV5 to a Line 6 POD 2.0 and essentially use that as my amp. I use the Vox AC 15 setting and I've very happy with the overall sound.
-
+      Both my company an I have been using Media Temple for years now. We started on their Grid Server (shared hosting) but quickly realized we needed a much better server. That's when we moved to their Dedicated Virtual (dv) server. We've been running that for the past 3 years and have had no problems at all. In fact it's been the best hosting we've ever had.
+Even though business is going well, we started looking at ways to save a little $$ here and there. We decided to re-evaluate our hosting platform and see how we could save money. After much consideration we decided to stick with MT since they've always been so good to us, but decided to switch to their (ve) server. The specs are almost the same and it's almost half the price.
+The difference? Basically with the (dv) you are not only paying for hosting but also for a Plesk license. It gives you a nice GUI for interacting with the server. Since we already work a ton with command line on our other severs we decided we didn't need this luxury.
+Ok, enough with the back story. Here's the HOW you've been waiting for. Keep in mind that this info is based around migrating from a (dv) to a (ve) server BUT it will help anyone looking to get started with MT's (ve) server.
+Also, the info below is only for migrating a site to the (ve) and not how to "set it up". If you are looking for that, I recommend this article.
 &nbsp;
+1. First things first, SSH into your server. (you can use any user that you've set up or you can even use 'root')
+2. Create the new site in your virtual host (replace with your domain and IP address)
+[bash] sudo vi /etc/apache2/sites-available/DOMAIN.COM [/bash]
+Then add the following to the file
+[plain]
+&lt;VirtualHost YOUR-IP:80&gt;
+ServerAdmin webmaster@DOMAIN.COM
+ServerName DOMAIN.COM
+ServerAlias www.DOMAIN.COM
+DocumentRoot /var/www/DOMAIN.COM/html/
+ErrorLog /var/www/DOMAIN.COM/logs/error.log
+CustomLog /var/www/DOMAIN.COM/logs/access.log combined
+&lt;/VirtualHost&gt;
+[/plain]
+You'll also need to know how to use Vi, and can find out more HERE, but for know just know that :q will QUIT the file and :wq will WRITE it before you QUIT.
+3. Now we need to create the directories we specified above "html" and "logs"
+[bash]
+sudo mkdir -p /var/www/DOMAIN.COM/html
+sudo mkdir -p /var/www/DOMAIN.COM/logs
+[/bash]
+4. Then just add the site to Apache and reload it.
+[bash]
+sudo a2ensite DOMAIN.COM
+sudo /etc/init.d/apache2 reload
+[/bash]
+5. Make the folder writeable use either 755 or 777 (just be cautious of security)
+[bash] sudo chmod 777 /var/www/DOMAIN.COM/html [/bash]
+6. Copy over your files from your (dv) to your (ve) and verify it's all there - http://ip-address/domain.com/html/
+7. Now comes the database part. If your site is database-less then you can move on to the last step otherwise see below.
+First log in to MySQL via command line (I prefer to log in with root)
+[bash] mysql -u root -p [/bash]
+Second, create the database and set up a user and password
+[bash] create database DATABASE-NAME; grant all on DATABASE-NAME.* to 'USERNAME' identified by 'PASSWORD'; [/bash]
+Third, exit MySQL and import your .SQL file into the database. I personally found the easiest way to do this is to first upload your .SQL file to the root of your /html/ folder then run the following.
+[bash] mysql -u root -p DATABASE-NAME &lt; /var/www/DOMAIN.COM/html/FILENAME.SQL [/bash]
+8. Lastly, log into your OLD (dv) and remove the DNS Zone and then log into your new (ve) and add the new DNS Zone.... or you could just use MT's built in Point to Another Server Tool.
+That should be it... let me know if you have any issues or run into any problems.
 
 
 
-      <a class="readmore" href="/life/music/2012/10/03/guitars-and-pedals.html">read more...</a>
+      <a class="readmore" href="/development/2013/01/27/migrate-from-dv-to-ve-server.html">read more...</a>
     </div>
   </article>
   
   <article>
-    <h2 class="post-title-list"><a href="/development/life/2012/08/10/produce-brands.html">Produce Brands</a></h2>
-    <span class="date">August 10, 2012</span>
+    <h2 class="post-title-list"><a href="/development/2013/01/04/dev-tools.html">Development Tools - Updated</a></h2>
+    <span class="date">January 4, 2013</span>
     <div class="post-content">
-      Life tends to stay pretty hectic.... and I rarely have time to pick up new projects. However, when a good friend approached me with a new idea a month or so back, I knew I would be a fool not to go for it.
-I won't go into too much detail as of yet... but basically I'll say this:
-EVERYONE eats produce... from one place or another and with all the new technology out there, the produce game is changing. We recognize that and also see an opportunity to create a product that will help make the lives of both consumers and growers better. You could say we are bridging a gap between the grower and the consumer.
-We'll be releasing more details later but in the meantime though, enjoy this picture of some homemade sauce we made while discussing the product and be sure to check out our website - http://producebrands.com
+      Quite often, I get asked what kind of set up I have and what programs I use on a daily basis. About a year ago, I wrote a post, but below is an updated list... this time I'll stick to development related programs.
+Also, below you'll find some info my current hardware setup as well.
+Software
+
+Coda 2 - came out in 2012 and I've been very pleased with it.
+Sublime Text 2 - even though Coda has been updated... I still turn to ST2 when I need nothing but pure speed.
+MAMP Pro - running sites locally.
+Terminal - I used to use iTerm... but switched back since I feel this does a good enough job on it's own. Also, I use Coda 2's terminal as well.
+ColorSnapper - grabs colors
+ForkLift - switched from Filezilla to ForkLift. Haven't looked back....
+Chrome - even though it's a browser... it's one of the best tools a developer can have in his toolbox
+Fireworks CS3
+Photoshop CS6
+
+&nbsp;
+Hardware
+
+2009 iMac - 16gb Ram, 500gb Hard Drive - 2 monitors connected to it.
+2012 Macbook Pro 15" Retina - 8gb Ram, 256gb Hard Drive
+iPhone 5 - 16gb
+Google Nexus 7 16gb (my only non apple device - everyone should have at least one!)
 
 
 
 
-      <a class="readmore" href="/development/life/2012/08/10/produce-brands.html">read more...</a>
+      <a class="readmore" href="/development/2013/01/04/dev-tools.html">read more...</a>
     </div>
   </article>
   
   <article>
-    <h2 class="post-title-list"><a href="/life/2012/07/02/summer-fun.html">Summer Fun</a></h2>
-    <span class="date">July 2, 2012</span>
+    <h2 class="post-title-list"><a href="/life/2013/01/02/doing-more.html">Doing More</a></h2>
+    <span class="date">January 2, 2013</span>
     <div class="post-content">
-      
-This summer I had the awesome opportunity to go on a trip with a group of students from our church. The trip is called iPac and last for two weeks. The first part of the trip was a serving part, where the students helped build a home for Habitat for Humanity of Greater Birmingham. The second week was spent at a camp in Panama City Beach, Florida called BigStuf.
-I had the privilege to join the students for the second week (yes I know... the easy part), but it was still well worth it.
-This is yet just another reason as to why I love how my church does student ministry, and am so grateful to be a part of it.
-&nbsp;
+      "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover."
+- Mark Twain
+The above quote is one that my wife tends to use a lot, and for good reason. Honestly, I had never heard it until she brought it to my attention. I've spent the last few days reading it over and over and realizing that there is so much more to life than sitting at my desk programming. Don't get me wrong, I thoroughly enjoy programming and my job... actually I can go as far to say that I love it.
+Just a little over 3 years ago, I left an "office" job for a "at home" job. I can't tell you how excited I was, just knowing I would be able to spend more time with my wife... finally be able to get a dog and put more focus on things I had been distracted from. The only problem was... I was wrong. Well I do spend more time with my wife and we did get a dog... but all I've done for the past 3 years is program. I've launched a few side projects but my grand and glorious plans of "doing" more has been a complete flop.
+I'm not a big fan of New Year's Resolutions... because they tend to remind me what failure feels like. This year, instead of making a list of resolutions... I'm making one. It's a pretty big one, but also one that is very very hard to fail at.
+My 2013 New Year's Resolutions is to simply.... Do More.
+
+Loose more weight...
+Be more active...
+
+Learn to be more efficient...
+Love people more...
+Read more...
+Spend more time doing the things I've always wanted to...
+
+That's it... I just want this year and every year to come to be filled with more than any other year prior.
+I want to die without a bucket list.
 
 
 
-      <a class="readmore" href="/life/2012/07/02/summer-fun.html">read more...</a>
+      <a class="readmore" href="/life/2013/01/02/doing-more.html">read more...</a>
     </div>
   </article>
   

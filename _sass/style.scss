@@ -35,6 +35,10 @@ body {
 	animation-duration: 0.5s;
 }
 
+em {
+	font-style: italic;
+}
+
 @-webkit-keyframes bodyAnim {
 	0%   { opacity: 0;}
 	100% { opacity: 1;}
@@ -159,6 +163,21 @@ header nav {
           color: $link_color;
         }
       }
+			h2 {
+				a {
+					color: $link_color;
+				}
+				color: $link_color;
+				border-bottom: 1px solid $grey_color;
+				margin-bottom: 20px;
+			}
+			h4 {
+				font-size: 13px;
+				font-style: italic;
+			}
+			ul {
+				margin: 15px 0;
+			}
       ul li:before {
         content: '\e049';
         font-family: 'typicons';

@@ -7,6 +7,179 @@
     <atom:link href="http://timw.co/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Blogging Platforms</title>
+        <description>&lt;p&gt;As an instructor at &lt;a href=&quot;http://theironyard.com&quot;&gt;The Iron Yard&lt;/a&gt;, I get asked this question a lot. Here is a VERY simple breakdown of some of my thoughts on different platforms. This is by no means comprehensive, but I feel it gives a pretty solid overview of the platforms I&amp;#39;ve had experience with.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2&gt;&lt;a href=&quot;http://wordpress.com&quot;&gt;WordPress&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h4&gt;Upsides&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Free&lt;/li&gt;
+&lt;li&gt;Easy to set up&lt;/li&gt;
+&lt;li&gt;Up and running really quick&lt;/li&gt;
+&lt;li&gt;Multiple themes to choose from&lt;/li&gt;
+&lt;li&gt;Custom Domain Support&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Downsides&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Not very editable without paying&lt;/li&gt;
+&lt;li&gt;Fairly generic looking (not really a bad thing though)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a href=&quot;http://tumblr.com&quot;&gt;Tumblr&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h4&gt;Upsides&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Free&lt;/li&gt;
+&lt;li&gt;Easy to set up and use&lt;/li&gt;
+&lt;li&gt;Multiple themes to choose from&lt;/li&gt;
+&lt;li&gt;Custom domain support
+*&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Downsides&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sometimes not taken seriously&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a href=&quot;http://medium.com/&quot;&gt;Medium&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h4&gt;Upsides&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Exposure&lt;/li&gt;
+&lt;li&gt;Extremely social&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Downsides&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;No custom domain support&lt;/li&gt;
+&lt;li&gt;Not customizable&lt;/li&gt;
+&lt;li&gt;Only one &amp;quot;theme&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a href=&quot;http://wordpress.org&quot;&gt;WordPress.org&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h4&gt;Upsides&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fully customizable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Downsides&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Can be time consuming your first time to set up&lt;/li&gt;
+&lt;li&gt;Costs (you need hosting and a domain)&lt;/li&gt;
+&lt;li&gt;You have to manage it and keep it up to date&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a href=&quot;http://getbarley.com&quot;&gt;Barley&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h4&gt;Upsides - &lt;em&gt;spoiler alert, I had a hand in building this&lt;/em&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Extremely Customizable&lt;/li&gt;
+&lt;li&gt;Hosted for you&lt;/li&gt;
+&lt;li&gt;Dropbox Sync&lt;/li&gt;
+&lt;li&gt;Simple to use template tags&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Downsides&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You still need to touch HTML if you want it customized&lt;/li&gt;
+&lt;li&gt;Has a higher monthly cost than some others listed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h4&gt;Upsides&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Extremely customizable&lt;/li&gt;
+&lt;li&gt;Hostable on Github&lt;/li&gt;
+&lt;li&gt;Static site, so it&amp;#39;s really fast&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4&gt;Downsides&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Not super easy to work with&lt;/li&gt;
+&lt;li&gt;Different than normal workflow&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 26 Sep 2014 00:00:00 -0400</pubDate>
+        <link>http://timw.co/2014/09/26/blogging-platforms.html</link>
+        <guid isPermaLink="true">http://timw.co/2014/09/26/blogging-platforms.html</guid>
+      </item>
+    
+      <item>
+        <title>Learning</title>
+        <description>&lt;p&gt;We are past the halfway mark for the first Front End class in Atlanta. We are moving fast and everyone is keeping up in an incredible way.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;We have walked through a handful of tools, libraries and frameworks. We have also spent a good amount of time talking through programming theory and best practice. One of the pieces that makes The Iron Yard stand out is that we put a large focus on learning how to learn. Let’s face it, in 12 weeks we can’t even begin to cover every library and framework and every aspect of HTML5. Let’s not forget about what’s coming in ECMAScript 6. Sure we’ve talked about it, but more importantly, we’ve talked about the fact that it’s coming and how it won’t stop there. New frameworks are coming out every week and the best way to keep up is to learn what to look for. It helps to have a broad enough understanding of the language to break it down and judge for yourself if it will be useful to you or not.&lt;/p&gt;
+
+&lt;p&gt;Don’t get me wrong, we still dive pretty deep into JavaScript core. We spent a while writing vanilla JavaScript before we introduced jQuery, Underscore and a handful of other libraries. We also talked through the myriad of MV* frameworks and currently we are walking through Backbone.js. We start here because it is a library with a low barrier to entry. It helps round out the idea of JavaScript constructors and gives us a great way to organize our code for building applications. We are about a week into Backbone and each student in the class is building their own version of a blog. This might sound like a simple project to a few of you, but keep in mind that 6 weeks ago many of our students had never opened a text editor before. That, to me, is incredible!&lt;/p&gt;
+
+&lt;p&gt;I believe the only way this can be accomplished is because of the immersive environment that The Iron Yard provides. After all, perseverance does pay off and working hard for something you want is a great feeling. Even as the instructor of the class, I’m learning more about programming and myself with each lecture. I am falling more in love with this craft each day and glad to have a group of people along for the ride with me.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted on &lt;a href=&quot;http://atlanta.theironyard.com/post/92757229935/always-learning&quot;&gt;The Iron Yard Blog : Atlanta&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 Aug 2014 00:00:00 -0400</pubDate>
+        <link>http://timw.co/2014/08/17/learning.html</link>
+        <guid isPermaLink="true">http://timw.co/2014/08/17/learning.html</guid>
+      </item>
+    
+      <item>
+        <title>Perseverance</title>
+        <description>&lt;p&gt;It is hard to believe Atlanta’s first Front End Engineering class is now finishing their fourth week. I think back to the dinner we had together the night before class began. Here was a group coming from all over, meeting for the first time and embarking on a twelve week journey. We all came from different backgrounds, states, and skill levels; yet we all shared a common commitment to grow and learn.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Like any legendary journey, the most rewarding roads are also the most difficult. By the third week of class, I began to notice tired eyes and messed up hair - probably the result of sleeping on campus the night before. Many became weary in their exploration, their discouragement obvious from their sighs as they stared at their monitor or the open conversation they had with me about their struggles. As much as I wanted to tell them to take a week off, I knew that reaching our destination in twelve weeks would mean pushing forward to the end goal.&lt;/p&gt;
+
+&lt;p&gt;So we pushed forward and were rewarded with week four. Frustration melted to excitement. The concepts we had been covering were just now starting to click. Not just in programming, but in all areas of life, it is a proud moment when you invest in mastering something for a long time and it finally begins to work correctly.&lt;/p&gt;
+
+&lt;p&gt;Since the students were really starting to understand what they were doing, and knowing I wanted to keep pushing them, we spent part of the fourth week doing their first group project. Students divided into three groups and I gave them a wireframe and a fairly vague project summary and sent them off running. Not only would they have to utilize all of the skills they have learned so far but find a way to use these in a team setting. Up until now all of their work has been solo. It has been incredible to see how they are all coming together, dividing up tasks and even implementing some agile development methods to get their work done. They are learning to communicate with each other and what it means to work as part of a team. They have been able to use their creativity to think outside the box and explore some things that I don’t think we would have specifically covered in a lecture. Once they finish the project they will be presenting them to the class and sharing what worked and what didn’t.&lt;/p&gt;
+
+&lt;p&gt;This week has been a welcome retreat from the struggles of the first three weeks. Don’t get me wrong, we still have a LOT to cover in the next eight weeks and I expect more frustration, hair pulling, and perplexing stares at their screen. The reality is that in the journey of programming, there are always moments of frustration and hitting one’s head against the wall. New tools and processes come out every day and we have to keep up. But I hope my students will join me in saying that the hard perseverance of week three met with the glory of week four is what makes being a developer so enjoyable.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted on &lt;a href=&quot;http://atlanta.theironyard.com/post/92049505715/perseverance-pays-off&quot;&gt;The Iron Yard Blog : Atlanta&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Jul 2014 00:00:00 -0400</pubDate>
+        <link>http://timw.co/2014/07/01/perserverance-pays-off.html</link>
+        <guid isPermaLink="true">http://timw.co/2014/07/01/perserverance-pays-off.html</guid>
+      </item>
+    
+      <item>
+        <title>Joining the Iron Yard</title>
+        <description>&lt;p&gt;I’ve had the privilege over the years to work with some amazing companies and startups and am excited to bring my experiences into the classroom. For me, being able to spend my days building and talking about development is a dream come true.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;I first got into programming about 12 years ago and had to learn everything on my own. There was no Iron Yard, no online training and just a few books I could find at the library. Even then I still found that the best way to learn was to immerse myself and to actually build something. It wasn’t too long after that I developed my first app, began attending JavaScript conferences and started to feel like a part of the community.&lt;/p&gt;
+
+&lt;p&gt;Coming to The Iron Yard is exciting for two reasons. First (and most importantly) it is because they are an awesome company filled with great people and amazing students. I’ve only been around campus for a week but spending time with some of the current students has been one of the best parts. Listening to stories of what they are learning, what they are struggling with and what they are planning to build has been very humbling.&lt;/p&gt;
+
+&lt;p&gt;Secondly, it’s the south. I was born in Florida and lived the first 18 years of my life in a warmer climate and am excited to be back. Living in the north was definitely an experience and one that I won’t soon forget but from the day my wife and I got married we’ve constantly talked about moving south. In the past week, I not only sold my snow blower but also tried boiled peanuts for the first time.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Jun 2014 00:00:00 -0400</pubDate>
+        <link>http://timw.co/2014/06/05/joining-the-iron-yard.html</link>
+        <guid isPermaLink="true">http://timw.co/2014/06/05/joining-the-iron-yard.html</guid>
+      </item>
+    
+      <item>
         <title>Something Crazy</title>
         <description>&lt;blockquote&gt;
 &lt;p&gt;I&amp;#39;m going to challenge you to do something crazy...&lt;/p&gt;
@@ -139,54 +312,6 @@
         <pubDate>Mon, 10 Feb 2014 00:00:00 -0500</pubDate>
         <link>http://timw.co/2014/02/10/thoughts-on-email.html</link>
         <guid isPermaLink="true">http://timw.co/2014/02/10/thoughts-on-email.html</guid>
-      </item>
-    
-      <item>
-        <title>Year In Review : 2013</title>
-        <description>&lt;p&gt;This time of year, there are thousands of articles (likely more) being written with a similar title or one relating to next years resolutions. I know they are cliched and most people don&amp;#39;t really care all that much, but I did write an article at &lt;a href=&quot;http://tim.getbarley.com/2790/doing-more&quot;&gt;the beginning of this year&lt;/a&gt; and wanted to put out a recap of it.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;The article I&amp;#39;m referring to is titled &amp;quot;&lt;a href=&quot;http://tim.getbarley.com/2790/doing-more&quot;&gt;Doing More&lt;/a&gt;&amp;quot; and it was this idea that over the course of 2013 and all years following I would simply put a focus on doing bigger and better things each year. I also outlined quite a few goals such as loosing weight, reading more and doing things that I&amp;#39;ve always wanted. Unfortunately, I didn&amp;#39;t loose as much as I wanted this year, so that is one that I need to continue to work on. I did read more... a lot more actually.&lt;/p&gt;
-
-&lt;p&gt;One thing I did in 2013 that I have always wanted to do was going to &lt;a href=&quot;http://instagram.com/p/ZD00alJGw9&quot;&gt;Yosemite&lt;/a&gt;. Let me first say if you haven&amp;#39;t been there, start planning a trip right now, it is worth every penny. When I wrote that article, I had no idea that I would have the opportunity to go. Shortly into the month of January I realized that my wife and I had not been on a vacation (just the two of us) since our honeymoon 6+ years prior. I knew I needed to plan something but never thought it would have been to go across the country to one of the most beautiful places on earth. In short, it was life changing and I would go back every year (or week) if I could.&lt;/p&gt;
-
-&lt;p&gt;Lastly, the biggest thing that happened to me this year was I officially jumped ship from the services industry to the product industry. I left my comfortable job of developing websites and apps for other people and joined an &lt;a href=&quot;http://plainmade.com/&quot;&gt;awesome team&lt;/a&gt; and am &lt;a href=&quot;http://getbarley.com/&quot;&gt;currently developing the coolest thing&lt;/a&gt; I have ever worked on. Not a day goes by that I am not grateful for this opportunity and excited to see where it goes. If you would like to hear more about this story, feel free to check out the podcast &lt;a href=&quot;http://www.chasingproduct.com/episodes/episode-10-first-dont-succeed-product-launch-wtim-whitacre&quot;&gt;Chasing Product&lt;/a&gt; which I was a guest on earlier this year.&lt;/p&gt;
-
-&lt;p&gt;There are many things I wish I did this year and more on my list for 2014 but I am happy to report that it is a very nice feeling to end a year with few regrets.&lt;/p&gt;
-
-&lt;p&gt;I still have a bucket list... but I&amp;#39;m not dead yet.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 31 Dec 2013 00:00:00 -0500</pubDate>
-        <link>http://timw.co/2013/12/31/year-in-review-2013.html</link>
-        <guid isPermaLink="true">http://timw.co/2013/12/31/year-in-review-2013.html</guid>
-      </item>
-    
-      <item>
-        <title>Current Loves : Reading Edition</title>
-        <description>&lt;p&gt;While I don't read as many books as I want (or buy), I do spend quite a bit of time reading on a weekly basis. Listed below is a list of what I'm currently digging. &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;b&gt;Web&lt;/b&gt;: &lt;a href=&quot;http://thenews.im&quot; target=&quot;_blank&quot;&gt;The News&lt;/a&gt; by Ahmet Sülek - A mix of Designer News &amp; Hacker News&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;iOS&lt;/b&gt;: &lt;a href=&quot;https://itunes.apple.com/us/app/interesting-for-iphone/id586848801&quot; target=&quot;_blank&quot;&gt;Interesting&lt;/a&gt; by Mike Rundle - A mix of a ton of great sites... never be bored again. &lt;/li&gt;&lt;li&gt;&lt;b&gt;Web&lt;/b&gt;: &lt;a href=&quot;http://alistapart.com/&quot; target=&quot;_blank&quot;&gt;A List Apart&lt;/a&gt; - Keeps me up on current web trends&lt;/li&gt;&lt;li&gt;&lt;b&gt;Web&lt;/b&gt;: &lt;a href=&quot;http://www.indievisionmusic.com/&quot; target=&quot;_blank&quot;&gt;Indie Vision Music&lt;/a&gt; - A way to stay up to date with my favorite artists&lt;/li&gt;&lt;li&gt;&lt;b&gt;Web&lt;/b&gt;: &lt;a href=&quot;http://colin.getbarley.com/&quot; target=&quot;_blank&quot;&gt;Colin Devroe's Blog&lt;/a&gt; - Yeah, he's a friend but he's a good writer and shares some awesome stuff&lt;/li&gt;&lt;li&gt;&lt;b&gt;Web&lt;/b&gt;: &lt;a href=&quot;http://xkcd.com/&quot; target=&quot;_blank&quot;&gt;xkcd&lt;/a&gt; - My favorite web comic, smart &amp; witty&lt;/li&gt;&lt;li&gt;&lt;b&gt;Web / iOS&lt;/b&gt;: &lt;a href=&quot;http://getpocket.com/&quot; target=&quot;_blank&quot;&gt;Pocket App&lt;/a&gt; - Not specific content, but anything else I find throughout the day, I send here for later&lt;/li&gt;&lt;li&gt;&lt;b&gt;Web&lt;/b&gt;: &lt;a href=&quot;http://dribbble.com/&quot; target=&quot;_blank&quot;&gt;Dribbble&lt;/a&gt; - While not much reading here, it's still a great site to keep up with&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 16 Dec 2013 00:00:00 -0500</pubDate>
-        <link>http://timw.co/2013/12/16/current-loves-reading-edition.html</link>
-        <guid isPermaLink="true">http://timw.co/2013/12/16/current-loves-reading-edition.html</guid>
-      </item>
-    
-      <item>
-        <title>My Terminal Setup</title>
-        <description>&lt;p&gt;As I &lt;a href=&quot;http://tim.getbarley.com/2791/development-tools-updated&quot; target=&quot;_blank&quot;&gt;mentioned&lt;/a&gt; earlier this year, I switched back to the OS X built in terminal for my everyday coding needs. I like to keep as few programs on my computer as possible and since terminal is baked in, I just stick with it. One thing I missed was some of the customization I got when using programs such as iTerm. To combat that, I began looking around for some ways to trick out my terminal, both in appearance but also (and more importantly) in functionality.  &lt;/p&gt;&lt;p&gt;First step, download and install &lt;a href=&quot;http://totalterminal.binaryage.com/&quot; target=&quot;_blank&quot;&gt;TotalTerminal&lt;/a&gt;. While this is technically another program, you only know it by the extra settings window under Terminal &gt; Preferences. This program adds the ability to open the terminal window from the top/bottom of your screen with a simple key command. I'm currently using CMD + Left Arrow.&lt;/p&gt;&lt;p&gt;When it comes down to the meat of my terminal window, I have chosen to use the Zsh shell as opposed to the built in Bash shell. Added to this, I also use &lt;a href=&quot;http://planetargon.com/who-we-are/robby-russell&quot; target=&quot;_blank&quot;&gt;Robby Russell&lt;/a&gt;'s &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot; target=&quot;_blank&quot;&gt;Oh-My-Zsh&lt;/a&gt; framework which is where most customization comes in. I won't go into much setup here as this has already been done &lt;a href=&quot;http://www.stevendobbelaere.be/installing-and-configuring-the-oh-my-zsh-shell/&quot; target=&quot;_blank&quot;&gt;many times&lt;/a&gt; before, but it's fairly easy. Just install Zsh, followed by Oh-My-Zsh and start configuring the .zshrc file.&lt;/p&gt;&lt;p&gt;Here is what mine looks like:&lt;/p&gt;&lt;pre&gt;# Path to your oh-my-zsh configuration.&lt;br /&gt;ZSH=$HOME/.oh-my-zsh&lt;br /&gt;&lt;br /&gt;# Theme&lt;br /&gt;ZSH_THEME=&quot;cloud&quot;&lt;br /&gt;&lt;br /&gt;# Aliases&lt;br /&gt;alias zshconfig=&quot;subl ~/.zshrc&quot;&lt;br /&gt;alias ohmyzsh=&quot;subl ~/.oh-my-zsh&quot;&lt;br /&gt;&lt;br /&gt;# Waiting Dots&lt;br /&gt;COMPLETION_WAITING_DOTS=&quot;true&quot;&lt;br /&gt;&lt;br /&gt;# Plugins&lt;br /&gt;plugins=(git)&lt;br /&gt;&lt;br /&gt;source $ZSH/oh-my-zsh.sh&lt;/pre&gt;&lt;p&gt;As you can see, I keep things pretty simple. I use the cloud theme, have a few alias set up and am currently only using the GIT plugin. There are &lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins&quot; target=&quot;_blank&quot;&gt;MANY other plugins&lt;/a&gt; you can use as well.&lt;/p&gt;&lt;p&gt;There you have it, my simple terminal setup. Not too many frills, but between the key command to open terminal, and the GIT plugin to always know what branch I'm on and if there are uncommitted changes it makes for quite a nice daily work environment. &lt;/p&gt;
-</description>
-        <pubDate>Sun, 15 Dec 2013 00:00:00 -0500</pubDate>
-        <link>http://timw.co/2013/12/15/my-terminal-setup.html</link>
-        <guid isPermaLink="true">http://timw.co/2013/12/15/my-terminal-setup.html</guid>
-      </item>
-    
-      <item>
-        <title>Code &amp; Tonic on GitHub</title>
-        <description>&lt;p&gt;About 2 months ago, I launched a new website - &lt;a href=&quot;http://codeandtonic.com/&quot; target=&quot;_blank&quot;&gt;Code &amp; Tonic&lt;/a&gt;. I enjoy blogging but rarely &lt;del&gt;get&lt;/del&gt; make time to sit down and do it. So, I had the idea to create a simple website where I could share sites, articles and products that I find awesome but don't want to write an entire article about.&lt;/p&gt;&lt;p&gt;Tonight, I decided to make the code available on &lt;a href=&quot;https://github.com/twhitacre/code-and-tonic&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;  Even though I took an &lt;a href=&quot;http://wordpress.org/themes/required&quot; target=&quot;_blank&quot;&gt;existing awesome WordPress theme&lt;/a&gt; and turned it into a Barley theme, I still felt it might help some people who are getting started with Barley.&lt;/p&gt;&lt;p&gt;You can head over to the &lt;a href=&quot;https://github.com/twhitacre/code-and-tonic&quot; target=&quot;_blank&quot;&gt;GitHub repo&lt;/a&gt; and download it if you'd like. As always, feed back is appreciated.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 29 Oct 2013 00:00:00 -0400</pubDate>
-        <link>http://timw.co/2013/10/29/code-tonic-on-github.html</link>
-        <guid isPermaLink="true">http://timw.co/2013/10/29/code-tonic-on-github.html</guid>
       </item>
     
   </channel>
