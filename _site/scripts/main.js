@@ -1,7 +1,14 @@
 $.ajax({
-  url: 'http://blog.timw.co/feed',
+  url: 'http://blog.timw.co/',
   type: 'get',
-  dataType: 'xml',
+  dataType: 'html',
 }).done(function (data){
-  console.log('done?');
+  $(data).find('#content article').each(function () {
+    var art = $(this).find('.post-title-list a');
+    var link = art.attr('href');
+    var title = art.text(); 
+    var date = art.parent().next('.date').text();
+    $('#blog_articles ul').append('<li><a href="'+link+'">'+title+'</a> -  <span>'+date+'</span></li>');
+  });
 });
+

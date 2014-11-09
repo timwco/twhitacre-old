@@ -107,7 +107,7 @@ header nav {
 
 /*------ INTRO ------*/
 
-#intro {
+#intro, .intro {
 	padding: 45px 0;
 	border-bottom: 1px solid #e6e8ed;
 	font-family: "Merriweather";
@@ -120,6 +120,26 @@ header nav {
 
 #intro a {
   color: $link_color;
+}
+.intro h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.writings {
+  ul {
+    margin-top: 25px;
+    li {
+      list-style: none;
+      margin-bottom: 15px;
+      font-style: italic;
+      a {
+        color: $link_color;
+      }
+      span {
+        font-size: 10px;
+      }
+    }
+  }
 }
 
 /*------- Content / Posts ----*/
