@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 $link_color: #F45145;
-$grey_color: #848a91;
+$grey_color: hsla(300,1%,20%,1);
 
 /*------ CSS RESET ------*/
 
@@ -11,7 +11,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 body {
 	background: #e6e8ed;
-	font-family: "Lato";
+	font-family: 'Noto Serif', serif;
 	color: $grey_color;
 	-webkit-animation-name: bodyAnim;
     -moz-animation-name: bodyAnim;
@@ -110,7 +110,6 @@ header nav {
 #intro, .intro {
 	padding: 45px 0;
 	border-bottom: 1px solid #e6e8ed;
-	font-family: "Merriweather";
 	font-size: 15px;
 }
 
@@ -174,11 +173,10 @@ header nav {
       color: $link_color;
     }
     .post-content {
-      font-size: 15px;
+      font-size: 16px;
       line-height: 2;
-      font-family: 'Merriweather';
       p {
-        margin: 25px 0;
+        margin: 20px 0;
         a {
           color: $link_color;
         }
