@@ -3,8 +3,8 @@ $.ajax({
   type: 'get',
   dataType: 'html',
 }).done(function (data){
-  $(data).find('#content article').each(function () {
-    var art = $(this).find('.post-title-list a');
+  $(data).find('.content article').each(function () {
+    var art = $(this).find('h2.entry-title a');
     var link = art.attr('href');
     var title = art.text(); 
     var date = art.parent().next('.date').text();
