@@ -7,7 +7,7 @@ $.ajax({
     var art = $(this).find('h2.entry-title a');
     var link = art.attr('href');
     var title = art.text(); 
-    var date = art.parent().next('.date').text();
+    var date = art.parent().parent().find('.entry-time').text();
     $('#blog_articles ul').append('<li><a href="'+link+'">'+title+'</a> -  <span>'+date+'</span></li>');
   });
 });
